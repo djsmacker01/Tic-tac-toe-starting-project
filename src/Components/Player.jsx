@@ -19,7 +19,7 @@ export default function Player({ initialName, symbol }) {
     let playerName = <span className="player-name">{initialName}</span>;
 
     if (isEditing) { 
-      playerName = <input type="text" required value={ initialName } />
+      playerName = <input type="text" required value={ initialName } onChange={handleChange} />
     }
     return (
       <li>
