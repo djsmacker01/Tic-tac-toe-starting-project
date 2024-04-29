@@ -10,6 +10,7 @@ function App() {
               <span className="player-name">player 1</span>
               <span className="player-symbol">X</span>
             </span>
+            <button>Edit</button>
           </li>
 
           <li>
