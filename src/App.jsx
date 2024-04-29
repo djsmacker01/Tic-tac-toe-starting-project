@@ -2,7 +2,9 @@
 function App() {
   return (
     <main>
-      <h1>React Tic-Tac-Toe</h1>
+      {/* Player names */}
+   
+      {/* game board */}
     </main>
   );
 }
