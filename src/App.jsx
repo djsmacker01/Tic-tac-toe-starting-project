@@ -5,13 +5,7 @@ function App() {
       <div id="game-container">
         {/* Player names */}
         <ol id="players">
-          <li>
-            <span className="player">
-              <span className="player-name">player 1</span>
-              <span className="player-symbol">X</span>
-            </span>
-            <button>Edit</button>
-          </li>
+         
 
           <li>
             <span className="player">
