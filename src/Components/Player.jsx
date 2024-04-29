@@ -5,13 +5,13 @@ export default function Player({ name, symbol }) {
 
     function handleEditing() {
         console.log('edit')
-        setIsEditing(true)
+        setIsEditing(!isEditing)
     }
 
     let playerName = <span className="player-name">{name}</span>;
 
     if (isEditing) { 
-
+     playerName = <input type="text" required/>
     }
     return (
       <li>
@@ -19,7 +19,7 @@ export default function Player({ name, symbol }) {
                {playerName}
                 <span className="player-symbol">{symbol}</span>
         </span>
-        <button onClick={handleEditing}>Edit</button>
+        <button onClick={handleEditing}>{isEditing ? 'Save':  'Edit'}</button>
       </li>
     );
  }
