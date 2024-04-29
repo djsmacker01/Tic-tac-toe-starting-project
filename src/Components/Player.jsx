@@ -10,9 +10,12 @@ export default function Player({ initialName, symbol }) {
       //create a function when you state depends on the previous state
       setIsEditing(editing => !editing)
       // setIsEditing((editing) => !editing);
-      
+    
     }
 
+  function handleChange(event) {
+    setNewPlayerName(event.target.value)
+  }
     let playerName = <span className="player-name">{initialName}</span>;
 
     if (isEditing) { 
