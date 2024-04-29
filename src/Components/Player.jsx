@@ -5,10 +5,10 @@ export default function Player({ name, symbol }) {
 
     function handleEditing() {
       console.log('edit')
-      
+
       //create a function when you state depends on the previous state
       setIsEditing(editing => !editing)
-      setIsEditing((editing) => !editing);
+      // setIsEditing((editing) => !editing);
       
     }
 
