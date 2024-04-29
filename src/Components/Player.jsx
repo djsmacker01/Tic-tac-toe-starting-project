@@ -4,8 +4,12 @@ export default function Player({ name, symbol }) {
     const [isEditing, setIsEditing] = useState(false)
 
     function handleEditing() {
-        console.log('edit')
-        setIsEditing(!isEditing)
+      console.log('edit')
+      
+      //create a function when you state depends on the previous state
+      setIsEditing(editing => !editing)
+      setIsEditing((editing) => !editing);
+      
     }
 
     let playerName = <span className="player-name">{name}</span>;
