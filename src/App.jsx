@@ -2,7 +2,7 @@
 function App() {
   return (
     <main>
-      <div>
+      <div id="game-container">
         {/* Player names */}
         <ol id="players">
           <li>
@@ -16,7 +16,9 @@ function App() {
           </li>
         </ol>
         {/* game board */}
+        Game Board
       </div>
+      Log
     </main>
   );
 }
