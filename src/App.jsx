@@ -10,7 +10,7 @@ function App() {
           <Player initialName="Player 2" symbol="O" />
         </ol>
         {/* game board */}
-        Game Board
+        {/* Game Board */}
         <GameBoard/>
       </div>
       Log
