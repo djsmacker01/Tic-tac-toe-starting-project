@@ -10,6 +10,7 @@ function App() {
         </ol>
         {/* game board */}
         Game Board
+        
       </div>
       Log
     </main>
