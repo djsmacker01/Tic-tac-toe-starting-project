@@ -15,6 +15,7 @@ export default function Player({ initialName, symbol }) {
   function handleChange(event) {
     setNewPlayerName(event.target.value)
   }
+  
     let playerName = <span className="player-name">{newPlayerName}</span>;
 
     if (isEditing) { 
