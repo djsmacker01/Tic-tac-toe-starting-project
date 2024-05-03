@@ -8,7 +8,7 @@ function App() {
         {/* Player names */}
         <ol id="players">
           <DemoPlayer initialName='Player 1' symbols='X' />
-          <DemoPlayer />
+          <DemoPlayer initialName='Player 2' symbols='O'/>
 
           {/* <Player initialName="Player 1" symbol="X" />
           <Player initialName="Player 2" symbol="O" /> */}
