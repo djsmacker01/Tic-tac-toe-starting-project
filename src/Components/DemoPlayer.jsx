@@ -4,7 +4,7 @@ export default function DemoPlayer() {
       <li>
         <span className="player">
           <span> Player name</span>
-          <span>player symbol</span>
+          <span>x</span>
         </span>
         <button>Edit</button>
       </li>
