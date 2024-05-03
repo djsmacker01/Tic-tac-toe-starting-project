@@ -3,7 +3,7 @@ export default function DemoPlayer({ initialName, symbols }) {
     <>
       <li>
         <span className="player">
-          <span> {initialName}</span>
+          <span className="player-name"> {initialName}</span>
           <span className="player-symbol">{symbols}</span>
         </span>
         <button>Edit</button>
