@@ -1,4 +1,10 @@
+import { useState } from "react";
 export default function DemoPlayer({ initialName, symbols }) {
+  const [edit, setIsEditing] = useState(false)
+
+  function handleEditButton() {
+    console.log('button clicked')
+  }
   return (
     <>
       <li>
@@ -6,7 +12,7 @@ export default function DemoPlayer({ initialName, symbols }) {
           <span className="player-name"> {initialName}</span>
           <span className="player-symbol">{symbols}</span>
         </span>
-        <button>Edit</button>
+        <button onClick={handleEditButton}>Edit</button>
       </li>
     </>
   );
