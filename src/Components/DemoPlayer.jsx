@@ -1,10 +1,10 @@
-export default function DemoPlayer() {
+export default function DemoPlayer({ initialName, symbols }) {
   return (
     <>
       <li>
         <span className="player">
-          <span> Player name</span>
-          <span>x</span>
+          <span> {initialName}</span>
+          <span>{symbols}</span>
         </span>
         <button>Edit</button>
       </li>
