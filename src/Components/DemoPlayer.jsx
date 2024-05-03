@@ -1,15 +1,13 @@
 export default function DemoPlayer(){
     return (
-        <>
-            <li>
-                <span id="player-name">
-
-
-                
+      <>
+        <li>
+          <span className="player">
+           <span> Player name</span>
+            <span>player symbol</span>
                 </span>
-                <span> Player name</span>
-                <span>player symbol</span>
+                <button>Edit</button>
         </li>
-        </>
-    )
+      </>
+    );
 }
