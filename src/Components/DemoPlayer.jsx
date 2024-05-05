@@ -4,7 +4,7 @@ export default function DemoPlayer({ initialName, symbols }) {
 
   function handleEditButton() {
     console.log("button clicked");
-    setIsEditing(!isEditing);
+    setIsEditing((editing)=>!editing);
   }
 
   let playerName = <span className="player-name"> {initialName}</span>;
