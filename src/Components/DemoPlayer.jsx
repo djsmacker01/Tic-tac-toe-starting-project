@@ -10,6 +10,7 @@ export default function DemoPlayer({ initialName, symbols }) {
   let playerName = <span className="player-name"> {initialName}</span>;
   if (isEditing) {
     playerName = <input type="text" />;
+    
   }
 
   return (
