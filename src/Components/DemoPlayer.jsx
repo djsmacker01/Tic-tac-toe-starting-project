@@ -10,7 +10,7 @@ export default function DemoPlayer({ initialName, symbols }) {
   let playerName = <span className="player-name"> {initialName}</span>;
   let btnCaption = 'Edit'
   if (isEditing) {
-    playerName = <input type="text" />;
+    playerName = <input type="text" required  value={initialName} />;
     btnCaption = 'Save'
 
   }
@@ -22,7 +22,7 @@ export default function DemoPlayer({ initialName, symbols }) {
           {playerName}
           <span className="player-symbol">{symbols}</span>
         </span>
-        <button onClick={handleEditButton}>{Edit}</button>
+        <button onClick={handleEditButton}>{btnCaption}</button>
       </li>
     </>
   );
