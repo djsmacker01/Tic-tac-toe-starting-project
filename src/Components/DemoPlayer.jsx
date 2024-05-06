@@ -12,6 +12,7 @@ export default function DemoPlayer({ initialName, symbols }) {
   if (isEditing) {
     playerName = <input type="text" required  value={initialName} />;
     btnCaption = 'Save'
+    
 
   }
 
