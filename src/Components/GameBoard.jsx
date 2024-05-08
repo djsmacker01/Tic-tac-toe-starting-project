@@ -6,8 +6,13 @@ const initialBoardGame = [
 ];
 
 export default function GameBoard() {
-    const [gameBoard, setGameBoard] = useState(initialBoardGame);
-    
+  const [gameBoard, setGameBoard] = useState(initialBoardGame);
+
+  function handleButtonClick() {
+    alert("button click");
+    setGameBoard();
+  }
+
   return (
     <ol id="game-board">
       {initialBoardGame.map((row, rowIndex) => (
@@ -15,7 +20,7 @@ export default function GameBoard() {
           <ol>
             {row.map((playerSymbol, colIndex) => (
               <li key={colIndex}>
-                <button>{playerSymbol}</button>
+                <button onClick={handleButtonClick}>{playerSymbol}</button>
               </li>
             ))}
           </ol>
