@@ -12,8 +12,9 @@ export default function GameBoard() {
   function handleButtonClick(rowIndex, colIndex) {
     // alert("button click");
       setGameBoard((prevGameBoard) => {
-          prevGameBoard[rowIndex][colIndex] = 'X';
-          return prevGameBoard
+          const updatedBoard = [...prevGameBoard.map(innerArray => [...innerArray])]
+          updatedBoard[rowIndex][colIndex] = 'X';
+          return updatedBoard
     });
   }
 
@@ -24,7 +25,7 @@ export default function GameBoard() {
           <ol>
             {row.map((playerSymbol, colIndex) => (
               <li key={colIndex}>
-                <button onClick={handleButtonClick}>{playerSymbol}</button>
+                <button onClick={()=>handleButtonClick(rowIndex, colIndex)}>{playerSymbol}</button>
               </li>
             ))}
           </ol>
