@@ -1,8 +1,8 @@
-const initialBoardGame = [
-  [null, null, null],
-  [null, null, null],
-  [null, null, null],
-];
+// const initialBoardGame = [
+//   [null, null, null],
+//   [null, null, null],
+//   [null, null, null],
+// ];
 
 // export default function GameBoard() {
 //   return (
