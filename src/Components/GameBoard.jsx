@@ -6,6 +6,7 @@ const initialBoardGame = [
 ];
 
 export default function GameBoard() {
+    const [gameBoard, setGameBoard] = useState(initialBoardGame);
     
   return (
     <ol id="game-board">
