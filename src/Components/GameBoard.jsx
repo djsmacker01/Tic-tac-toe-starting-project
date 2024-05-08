@@ -1,3 +1,4 @@
+import { useState } from "react";
 const initialBoardGame = [
   [null, null, null],
   [null, null, null],
@@ -5,6 +6,7 @@ const initialBoardGame = [
 ];
 
 export default function GameBoard() {
+    
   return (
     <ol id="game-board">
       {initialBoardGame.map((row, rowIndex) => (
