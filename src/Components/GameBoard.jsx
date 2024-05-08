@@ -31,7 +31,7 @@ export default function GameBoard() {
 
     return (
         <ol id="game-board">
-         {initialBoardGame}
+         {initialBoardGame.map((row,colRow)=> <li></li>)}
         </ol>
     )
 }
