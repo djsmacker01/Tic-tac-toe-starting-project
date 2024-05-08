@@ -8,9 +8,11 @@ const initialBoardGame = [
 export default function GameBoard() {
   const [gameBoard, setGameBoard] = useState(initialBoardGame);
 
-  function handleButtonClick() {
+  function handleButtonClick(rowIndex, colIndex) {
     alert("button click");
-    setGameBoard();
+      setGameBoard((prevGameBoard) => {
+        
+    });
   }
 
   return (
