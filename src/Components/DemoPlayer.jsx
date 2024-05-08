@@ -1,18 +1,19 @@
 import { useState } from "react";
 export default function DemoPlayer({ initialName, symbols }) {
   const [isEditing, setIsEditing] = useState(false);
+  const [editableName, isEditableName] = useState(initialName)
 
   function handleEditButton() {
     console.log("button clicked");
     setIsEditing((editing) => !editing);
     
-    
+
   }
 
-  let playerName = <span className="player-name"> {initialName}</span>;
+  let playerName = <span className="player-name"> {editableName}</span>;
   let btnCaption = 'Edit'
   if (isEditing) {
-    playerName = <input type="text" required  value={initialName} />;
+    playerName = <input type="text" required  value={editableName} />;
     btnCaption = 'Save'
   
 
