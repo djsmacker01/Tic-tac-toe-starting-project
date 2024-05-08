@@ -9,8 +9,8 @@ export default function DemoPlayer({ initialName, symbols }) {
     setIsEditing((editing) => !editing);
   }
 
-  function handleChange() {
-    setPlayerNames()
+  function handleChange(e) {
+    setPlayerName(e.target.value);
   }
 
   let playerName = <span className="player-name"> {editPlayer}</span>;
