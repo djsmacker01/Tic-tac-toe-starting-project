@@ -21,3 +21,12 @@ const initialBoardGame = [
 //     </ol>
 //   );
 // }
+
+export default function GameBoard() {
+
+    return (
+        <ol id="game-board">
+
+        </ol>
+    )
+}
