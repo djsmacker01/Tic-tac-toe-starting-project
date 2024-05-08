@@ -7,13 +7,16 @@ export default function DemoPlayer({ initialName, symbols }) {
     console.log("button clicked");
     setIsEditing((editing) => !editing);
     
+  }
 
+  function handleChange() {
+    setIsEditing((editing) => !editing);
   }
 
   let playerName = <span className="player-name"> {editableName}</span>;
   let btnCaption = 'Edit'
   if (isEditing) {
-    playerName = <input type="text" required  value={editableName} />;
+    playerName = <input type="text" required  value={editableName} onChange={handleChange}/>;
     btnCaption = 'Save'
   
 
