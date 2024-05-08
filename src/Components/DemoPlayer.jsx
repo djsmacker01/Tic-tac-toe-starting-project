@@ -10,7 +10,7 @@ export default function DemoPlayer({ initialName, symbols }) {
   }
 
   function handleChange() {
-    set
+    setPlayerNames()
   }
 
   let playerName = <span className="player-name"> {editPlayer}</span>;
