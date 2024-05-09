@@ -12,9 +12,17 @@ function App() {
     <main>
       <div id="game-container">
         {/* Player names */}
-        <ol id="players">
-          <DemoPlayer initialName='Player 1' symbols='X' />
-          <DemoPlayer initialName='Player 2' symbols='O'/>
+        <ol id="players" className="highlight-player">
+          <DemoPlayer
+            initialName="Player 1"
+            symbols="X"
+            isActive={activePlayer === "X"}
+          />
+          <DemoPlayer
+            initialName="Player 2"
+            symbols="O"
+            isActive={activePlayer === "O"}
+          />
 
           {/* <Player initialName="Player 1" symbol="X" />
           <Player initialName="Player 2" symbol="O" /> */}
