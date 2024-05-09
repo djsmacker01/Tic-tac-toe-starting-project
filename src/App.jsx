@@ -4,6 +4,11 @@ import GameBoard from "./Components/GameBoard";
 import Player from "./Components/Player";
 function App() {
   const [activePlayer, setActivePlayer] = useState('X')
+
+  function handleSelectPlayer()
+  {
+    
+}
   return (
     <main>
       <div id="game-container">
