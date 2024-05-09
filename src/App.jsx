@@ -6,7 +6,9 @@ function App() {
   const [activePlayer, setActivePlayer] = useState('X')
 
   function handleSelectPlayer(){
-    
+    setActivePlayer(() => {
+      
+    })
 }
   return (
     <main>
