@@ -6,7 +6,7 @@ const initialBoardGame = [
   [null, null, null],
 ];
 
-export default function GameBoard() {
+export default function GameBoard({onSelectPlayerButton}) {
   const [gameBoard, setGameBoard] = useState(initialBoardGame);
 
   function handleButtonClick(rowIndex, colIndex) {
@@ -15,7 +15,8 @@ export default function GameBoard() {
           const updatedBoard = [...prevGameBoard.map(innerArray => [...innerArray])]
           updatedBoard[rowIndex][colIndex] = 'X';
           return updatedBoard
-    });
+      });
+    onSelectPlayerButtonChange()
   }
 
   return (

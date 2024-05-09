@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 export default function DemoPlayer({ initialName, symbols }) {
   const [isEditing, setIsEditing] = useState(false);
 
