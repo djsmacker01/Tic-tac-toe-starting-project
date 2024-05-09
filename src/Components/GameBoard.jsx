@@ -16,7 +16,7 @@ export default function GameBoard({onSelectPlayerButton}) {
           updatedBoard[rowIndex][colIndex] = 'X';
           return updatedBoard
       });
-    onSelectPlayerButtonChange()
+    onSelectPlayerButton()
   }
 
   return (

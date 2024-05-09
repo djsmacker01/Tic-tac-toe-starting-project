@@ -21,7 +21,7 @@ function App() {
         </ol>
         {/* game board */}
         {/* Game Board */}
-        <GameBoard />
+        <GameBoard onSelectPlayerButton={handleSelectPlayer} />
       </div>
       Log
     </main>
