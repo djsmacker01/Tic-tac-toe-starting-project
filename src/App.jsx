@@ -21,7 +21,7 @@ function App() {
           <DemoPlayer
             initialName="Player 2"
             symbols="O"
-            // isActive={activePlayer === "O"}
+            isActive={activePlayer === "O"}
           />
 
           {/* <Player initialName="Player 1" symbol="X" />
